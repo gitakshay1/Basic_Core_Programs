@@ -6,7 +6,7 @@
         {
             Console.WriteLine("Choose the Program\n1 Flip Coin\n2 Leap Year\n3 Power Of 2" +
                 "\n4 Harmonic Number\n5 Prime Factors\n6 Quotient and Reminder\n7 Swap Numbers" +
-                "\n8 Even Or Odd");
+                "\n8 Even Or Odd\n9 Vowel or Consonant");
             int Choise=Convert.ToInt32(Console.ReadLine());
             switch(Choise)
             {
@@ -41,6 +41,10 @@
                 case 8:
                     Even_or_Odd even_Or_Odd=new Even_or_Odd();
                     even_Or_Odd.EvenOrOdd();
+                    break;
+                case 9:
+                    Vowel_or_Consonant vowel_Or_Consonant=new Vowel_or_Consonant();
+                    vowel_Or_Consonant.Vowel_Consonant();
                     break;
                 default:
                     Console.WriteLine("Enter Valid Choice");
