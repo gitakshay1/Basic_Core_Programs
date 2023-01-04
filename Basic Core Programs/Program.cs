@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
             Console.WriteLine("Choose the Program\n1 Flip Coin\n2 Leap Year\n3 Power Of 2" +
-                "\n4 Harmonic Number");
+                "\n4 Harmonic Number\n5 Prime Factors");
             int Choise=Convert.ToInt32(Console.ReadLine());
             switch(Choise)
             {
@@ -24,6 +24,10 @@
                 case 4:
                     Harmonic_Number harmonic_Number=new Harmonic_Number();
                     harmonic_Number.HarmonicNumber();
+                    break;
+                case 5:
+                    Factors factors=new Factors();
+                    factors.Prime_Factors();
                     break;
                 default:
                     Console.WriteLine("Enter Valid Choice");
