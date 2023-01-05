@@ -12,24 +12,28 @@ namespace Basic_Core_Programs
         {
             Console.WriteLine("Enter Alphabet");
             Char Alphabet = Console.ReadKey().KeyChar;
-            int alph = 0;
-            char[] alpha = { 'a','A','E','e','I','i','o','O','U','u'};
-            for(int i=1;i<=alpha.Length;i++)
+            switch(Alphabet)
             {
-                if(alpha[i]==Alphabet)
-                {
-                    alph = 1;
+                case'a':
+                    Console.WriteLine("\n" + Alphabet + " is Vowel");
                     break;
-                }
+                case 'e':
+                    Console.WriteLine("\n" + Alphabet + " is Vowel");
+                    break;
+                case 'i':
+                    Console.WriteLine("\n" + Alphabet + " is Vowel");
+                    break;
+                case 'o':
+                    Console.WriteLine("\n" + Alphabet + " is Vowel");
+                    break;
+                case 'u':
+                    Console.WriteLine("\n" + Alphabet + " is Vowel");
+                    break;
+                default:
+                    Console.WriteLine("\n" + Alphabet + " is Consonant");
+                    break;
             }
-            if(alph==1)
-            {
-                Console.WriteLine("\n"+Alphabet + " is Vowel");
-            }
-            else
-            {
-                Console.WriteLine("\n"+Alphabet + " is Consonant");
-            }
+            
         }
     }
 }
